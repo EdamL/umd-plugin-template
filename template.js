@@ -160,8 +160,8 @@
 	}
 
 	/**
-	* Throttle function
-	* Nicked from _underscore JS library: https://github.com/jashkenas/underscore
+	* Throttle & Debounce functions
+	* Nicked from underscore JS library: https://github.com/jashkenas/underscore
 	*/
 	// Returns a function, that, when invoked, will only be triggered at most once
 	// during a given window of time. Normally, the throttled function will run
@@ -209,10 +209,6 @@
 		};
 	};
 	
-	/**
-	* Debounce function
-	* Nicked from _underscore JS library: https://github.com/jashkenas/underscore
-	*/
 	// Returns a function, that, as long as it continues to be invoked, will not
 	// be triggered. The function will be called after it stops being called for
 	// N milliseconds. If `immediate` is passed, trigger the function on the
