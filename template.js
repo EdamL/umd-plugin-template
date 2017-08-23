@@ -124,14 +124,17 @@
         });
     };
 
-    /**
+	/**
      * To get offset values for a DOM object:
      */
     var getOffsets = function (obj) {
         var rect = obj.getBoundingClientRect();
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
 		return {
-		  top : rect.top + document.body.scrollTop,
-		  left : rect.left + document.body.scrollLeft
+		  top : parseInt(rect.top) + scrollTop,
+		  left : parseInt(rect.left) + scrollLeft
 		}
     };
 
