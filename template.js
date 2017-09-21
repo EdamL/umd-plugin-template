@@ -30,7 +30,7 @@
 
     // Default options
     var defaults = {
-		initClass = 'my-plugin-class',
+		initClass: 'my-plugin-class',
 		afterCreateFunction : null,
 		beforeCreateFunction : null
     };
